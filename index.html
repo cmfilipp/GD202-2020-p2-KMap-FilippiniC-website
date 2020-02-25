@@ -1,0 +1,104 @@
+!DOCTYPE html>
+<html lang="en">
+<title>Think + Do Sustainably</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="overview.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OVERVIEW</a>
+    <a href="mission.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NC STATES MISSION</a>
+    <a href="campusbehavior.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CAMPUS BEHAVIOR</a>
+    <a href="educationawareness.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EDUCATION AND AWARENESS</a>
+    <a href="wastereduction.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">WASTE REDUCTION</a>
+      </div>
+    </div>
+
+<!-- Page content -->
+  <div class=" w3-padding-large w3-padding-32 w3-opacity">
+    
+    <h1>THINK AND DO SUSTAINABLY</h1>
+      
+    </div>
+
+ 
+
+  <!-- Main Image -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://1v1ulb40yc772j8uk01kozpe-wpengine.netdna-ssl.com/wp-content/uploads/2018/07/Talley-Student-Union-NC-State-1.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <p><b>Talley Student Union</b></p>   
+    </div>
+  </div>
+ 
+
+  <!-- The Overview Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="overview">
+    <p class="w3-opacity"><i>"We believe in outcomes the serve the greater good"  -  NC State University</i></p>
+    <p class="w3-justify">Education on sustainability equips students to solve complex social, environmental, and economic challenges that the future holds. NC State’s efforts are strong, yet seem unnoticed by most students. Sustainability on campus cannot be successful without the engagement and actions of students. As a community, we need to come together to combat these issues, and focus our efforts toward the engrainment of sustainable practices at NC State University. </p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <img src="https://recycling.ncsu.edu/wp-content/uploads/sites/3/2018/01/aMrWufandClare.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:90%">
+      </div>
+      <div class="w3-third">
+        <img src="https://sustainability.ncsu.edu/multisite/wp-content/uploads/2019/04/zero-waste-wolfpack-992x558.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:90%">
+      </div>
+      <div class="w3-third">
+        <img src="https://sustainability.ncsu.edu/multisite/wp-content/uploads/2019/05/zww-992x558.jpg" class="w3-round" alt="Random Name" style="width:90%">
+
+   
+  
+<!-- End Page Content -->
+</div>
+
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
